@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: OsF1JsgfKwaXqqQLmB0nTa0oRU+aYCA/koIpn55uKeXIUFS2dxApAqnUik4IgEvBYmd4LbdP/7MmdmQKUydwtzq5S60p8qK4DkJ3gOa9vV81haOdua7ukGpMFyNLLa8Dga1rDJi6oquAJ/6d3H22uvGUhAwjt4qG7tJPNjTMItyc8vT2w2k+DchJ+i1dywoPu9lmvhkfdPH4z3GGQ/i+cXqd/VwNInVkcorTHDN4XtJm4ck3egM4zsXdgZTklSZnF+gDaOJPGZx98YQfNW4G61KZMxQEB65qFyVnWfJoMwXu232s/4FHU5WjL3SIZlYwx+v2HUx6ErSO7+HBFPsLpLI9/Zy3uQVSeuvXCiidjOgI+IT7dw4WJHc4mvXiaaCa+ayCQ3qPYQlipl8UoFBa6ovikCOehawE5jxCT42ctj0DsBwYP2xM0Q+eOVCNmUa0jQs3unhjwLVsoNsNGNFmg954rTqpMe3bZoAwjUmGNb9Le72kqEo8n8614DEEQlRPTpw7nv43aB4MkJJx0OHOPEoQE1T0ignq8WFVciX8h72W04GfFX3RdVqHkC6AUaO81VnUTVG0oUCE5RppPIowRFyw0v5WnLxtW632cgOtnYhAedDO8k5mwVmkvIw1RvsS7ob6l5yYN4FkbVxTe+MbyROkr0DET9DYhF85DQCPa5E=
+  app: boiling-ridge-91124
+  on:
+    repo: jennifer/react-hot-cold-testing
